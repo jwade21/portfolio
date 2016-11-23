@@ -1,0 +1,282 @@
+// // colors
+//text
+$blue: rgb(25, 162, 140);
+$orange: rgb(239, 81, 63);
+$darkerblue: darken($blue, 20%);
+$darkerorange: darken($orange, 20%);
+
+//background
+$lightblack: rgba(0, 0, 0, .7);
+$opaqueBlack: rgba(0, 0, 0, .9);
+
+//font-size
+$small-font: 18px;
+
+// Boiler plate CSS
+//---------------//
+
+body {
+  text-align: center;
+  color: $blue;
+  background-image: url('http://www.walldevil.com/wallpapers/a68/abstract-background-wallpaper-black-circle-blue-wallpapers-phone.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    p {
+      font-size: 24px;
+    }
+}
+img {
+  display: flex;
+  align-self: flex-start;
+  width: 130px;
+  margin: 10px;
+  display: inline-block;
+}
+.header {
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  .headerText {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    text-align: left;
+  }
+  h2 {
+    color: $orange;
+  }
+}
+
+
+
+
+.nav {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: $lightblack;
+  display: flex;
+  justify-content: center;
+
+   li {
+    display: inline;
+    margin: 8px 15px;
+  }
+   a {
+    font-size: 22px;
+    color: $orange;
+    text-decoration: none;
+    display: inline;
+    border-radius: 5px;
+    padding: 5px 5px 3px 5px;
+    &:hover {
+      color: $darkerorange;
+      background-color: $blue;
+    }
+  }
+  .active {
+    color: $orange;
+    background-color: $darkerblue
+  }
+}
+
+// Components
+//-----------//
+
+.content {
+  background-color: $lightblack;
+  border: 1px solid gray;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 50px;
+  height: 500px;
+  overflow: scroll;
+
+  .homeTextContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .Bio {
+      display: flex;
+      margin-top: 30px;
+      padding-bottom: 20px;
+      justify-content: space-around;
+      border-bottom: 3px solid $darkerorange;
+      // border-height: 20px;
+    }
+
+    .skillsContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+    .skills {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 5px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+      }
+
+      li {
+        list-style: none;
+        font-size: 24px;
+      }
+    }
+    p {
+      width: 44%;
+      // padding-right: 7%;
+      line-height: 30px;
+    }
+    img {
+      width: 25%;
+    }
+  }
+}
+
+.project {
+	width: 90%;
+	height: 450px;
+  background-position: center;
+  background-size: cover;
+	display: block;
+	margin: 35px auto;
+  border: 1px solid white;
+
+  .hidden{
+    visibility: hidden;
+  }
+
+  .projectContent {
+    background-color: $opaqueBlack;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .codeLinks {
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 10px;
+      margin: 5px;
+      text-decoration: none;
+      color: $orange;
+      background-color: $darkerblue;
+      border-radius: 5px;
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 22px;
+  }
+
+}
+::-webkit-scrollbar-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    border-radius: 4px;
+    background-color: rgba(235, 235, 235, .2);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+  width: 88%;
+  padding: 20px 0px;
+  align-self: center;
+  }
+  a {
+    width: 10%;
+    text-decoration: none;
+    color: $orange;
+    background-color: $darkerblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.contact {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .socials {
+    display: flex;
+    height: inherit;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  i {
+    font-size: 40px;
+    padding: 10px;
+    background-color: $darkerorange;
+    border-radius: 10px;
+  }
+  a {
+    font-size: 22px;
+    color: $blue;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+}
+
+// Individual Projects
+//------------------//
+
+#dateNight {
+  background-image: url('./photos/date-night.jpg');
+}
+#beerTraveler {
+  background-image: url('./photos/beerTraveler2.jpg');
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  p {
+    font-size: 21px;
+  }
+}
+#fakebook {
+  background-image: url('./photos/fakebook.jpg');
+}
+
+// responsiveness
+//-------------//
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 18px;
+    .header {
+      font-size: $small-font;
+      }
+    }
+
+  .content{
+    width: 90%;
+    .Bio img {
+      padding-top: 3%;
+    }
+  }
+}
