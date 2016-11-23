@@ -25,7 +25,7 @@ class App extends Component {
               Loves teamwork
             </h3>
             <h3>
-              Ready for work  
+              Ready for work
             </h3>
           </div>
         </div>
