@@ -14,7 +14,7 @@ class App extends Component {
               Jordan Wade
             </h1>
             <h2>
-              Full Stack Developer
+              Web Developer
             </h2>
           </div>
           <div className='headerTextRight'>
@@ -25,7 +25,7 @@ class App extends Component {
               Loves teamwork
             </h3>
             <h3>
-              Ready for work  
+              Ready for work
             </h3>
           </div>
         </div>

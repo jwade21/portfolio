@@ -6,7 +6,7 @@ class Home extends Component {
         <div className='homeTextContainer'>
           <div className='Bio'>
             <p>
-              I am an up and coming Full-Stack Web Developer whose main goal is to learn the skills needed to improve teamwork and communication between team members. I want to incorporate my leadership and communication skills into the Web Development community to help create stronger team functionality. One of my strongest suits is the ability to quickly spot patterns and mistakes.
+              I am an up and coming Web Developer whose main goal is to learn the skills needed to improve teamwork and communication between team members. I want to incorporate my leadership and communication skills into the Web Development community to help create stronger team functionality. One of my strongest suits is the ability to quickly spot patterns and mistakes.
             </p>
             <img src={require('./photos/fakeHeadshot.jpg')} alt='headshot'/>
           </div>
