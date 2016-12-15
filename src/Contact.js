@@ -6,7 +6,7 @@ class Contact extends Component {
       <div className='contact'>
         <div>
           <h2>
-            Feel free to contact me any time! I'm very frendly(:
+            Feel free to contact me any time!
           </h2>
         </div>
         <div className='socials'>
@@ -18,14 +18,13 @@ class Contact extends Component {
             <i className='fa fa-mobile'></i>
           </ul>
           <ul className='info'>
-            <a href='https://medium.com/@jordanwade' target="_blank">jordanwade</a>
-            <a href='https://github.com/jwade21' target="_blank">jwade21</a>
-            <a href='https://www.linkedin.com/in/jordan-wade' target="_blank">Jordan Wade</a>
+            <a href='https://medium.com/@jordanwade' target='_blank'>jordanwade</a>
+            <a href='https://github.com/jwade21' target='_blank'>jwade21</a>
+            <a href='https://www.linkedin.com/in/jordan-wade' target='_blank'>Jordan Wade</a>
             <p>jordanwade.dev@gmail.com</p>
             <p>(530)-708-2692</p>
           </ul>
         </div>
-        <h4>* Names are links *</h4>
       </div>
     )
   }

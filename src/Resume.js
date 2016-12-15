@@ -4,8 +4,16 @@ class Resume extends Component {
   render() {
     return(
       <div className='resume'>
-        <img src={require('./photos/resume.jpg')} alt='resume' />
-        <a href={require('./photos/resume.jpg')} download>Download</a>
+        <div>
+          <img src={require('./photos/resume.jpg')} alt='resume' />
+          <a href={require('./photos/resume.jpg')} download>Download JPG</a>
+          <a href={'https://drive.google.com/file/d/0B1XEB82qSxBiVW83RnZIaFlmSlk/view'} target='_blank'>View PDF</a>
+        </div>
+        <div>
+          <img src={require('./photos/resumeBW.jpg')} alt='resume' />
+          <a href={require('./photos/resumeBW.jpg')} download>Download JPG</a>
+          <a href={'https://drive.google.com/file/d/0B1XEB82qSxBiNW15TFdMYUM1LU0/view'} target='_blank'>View PDF</a>
+        </div>
       </div>
     )
   }

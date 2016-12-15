@@ -1,10 +1,30 @@
 import React, {Component} from 'react';
 
 class Project extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      class: 'hidden'
+    }
+    this._showContent = this._showContent.bind(this)
+    this._hideContent = this._hideContent.bind(this)
+  }
+
+  _showContent() {
+    this.setState({
+      class: 'projectContent'
+    })
+  }
+
+  _hideContent() {
+    this.setState({
+      class: 'hidden'
+    })
+  }
   render() {
     return(
-      <div className='project' id={this.props.project.id} onMouseOver={this.props.showClass} onMouseLeave={this.props.hideClass}>
-        <div className={this.props.class}>
+      <div className='project' id={this.props.project.id} onMouseOver={this._showContent} onMouseLeave={this._hideContent}>
+        <div className={this.state.class}>
           <h3>
             {this.props.project.title}
           </h3>

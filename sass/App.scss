@@ -12,13 +12,18 @@ $opaqueBlack: rgba(0, 0, 0, .9);
 //font-size
 $small-font: 18px;
 
+//font-family
+$raleway: 'Raleway', sans-serif;
+$crete: 'Crete Round', serif;
+
+
 // Boiler plate CSS
 //---------------//
 
 body {
   text-align: center;
   color: $blue;
-  background-image: url('http://www.walldevil.com/wallpapers/a68/abstract-background-wallpaper-black-circle-blue-wallpapers-phone.jpg');
+  background-image: url('./photos/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,22 +39,24 @@ img {
   display: inline-block;
 }
 .header {
-  display: flex;
-  align-self: flex-start;
-  justify-content: space-between;
+  text-align: center;
+  font-family: $crete;
   .headerText {
     display: flex;
     flex-direction: column;
   }
   h1 {
-    text-align: left;
+    font-size: 40px;
   }
   h2 {
     color: $orange;
+    font-size: 27px;
   }
 }
 
-
+.App {
+  font-family: $raleway
+}
 
 
 .nav {
@@ -58,6 +65,7 @@ img {
   background-color: $lightblack;
   display: flex;
   justify-content: center;
+  font-family: $crete;
 
    li {
     display: inline;
@@ -85,26 +93,39 @@ img {
 //-----------//
 
 .content {
-  background-color: $lightblack;
-  border: 1px solid gray;
   width: 80%;
   margin: 40px auto;
   padding-bottom: 50px;
-  height: 500px;
-  overflow: scroll;
+  background-color: $lightblack;
+  border-radius: 10px;
 
   .homeTextContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
 
-    .Bio {
+    .bio {
       display: flex;
       margin-top: 30px;
       padding-bottom: 20px;
       justify-content: space-around;
       border-bottom: 3px solid $darkerorange;
-      // border-height: 20px;
+    }
+
+    .bio p {
+      width: 50%;
+      display: flex;
+      align-self: center;
+      line-height: 35px;
+    }
+    .bioPictures {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      img {
+        width: 90%;
+        margin: 0px;
+      }
     }
 
     .skillsContainer {
@@ -116,29 +137,36 @@ img {
       justify-content: flex-start;
       align-items: flex-start;
       margin-bottom: 5px;
-
+      h3 {
+        font-size: 25px;
+      }
       ul {
         display: flex;
         flex-direction: column;
         line-height: 30px;
       }
-
       li {
         list-style: none;
         font-size: 24px;
+        padding: 5px;
       }
     }
     p {
       width: 44%;
-      // padding-right: 7%;
-      line-height: 30px;
+      line-height: 35px;
     }
     img {
       width: 25%;
     }
+    h2 {
+      font-size: 35px;
+    }
   }
 }
 
+.projectsPage {
+  padding-top: 5px;
+}
 .project {
 	width: 90%;
 	height: 450px;
@@ -161,6 +189,9 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    p {
+      width: 98%;
+    }
   }
 
   .codeLinks {
@@ -184,18 +215,9 @@ img {
   }
 
 }
-::-webkit-scrollbar-thumb {
-    -webkit-appearance: none;
-    width: 7px;
-    border-radius: 4px;
-    background-color: rgba(235, 235, 235, .2);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
 
 .resume {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   img {
   width: 88%;
   padding: 20px 0px;
@@ -208,6 +230,7 @@ img {
     background-color: $darkerblue;
     padding: 10px;
     border-radius: 5px;
+    margin: 5px;
   }
 }
 
@@ -225,7 +248,7 @@ img {
   ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   i {
     font-size: 40px;
@@ -239,15 +262,28 @@ img {
     text-decoration: none;
     margin: 20px;
   }
+  p {
+    font-size: 22px;
+  }
 
 }
 
 // Individual Projects
 //------------------//
 
+#manifestSocial {
+  background-image: url('./photos/manifest-social.jpg')
+}
 #dateNight {
   background-image: url('./photos/date-night.jpg');
 }
+#fakebook {
+  background-image: url('./photos/fakebook.jpg');
+}
+#dashProjects {
+  background-image: url('./photos/dash-projects.jpg');
+}
+
 #beerTraveler {
   background-image: url('./photos/beerTraveler2.jpg');
   height: 500px;
@@ -257,9 +293,6 @@ img {
   p {
     font-size: 21px;
   }
-}
-#fakebook {
-  background-image: url('./photos/fakebook.jpg');
 }
 
 // responsiveness
@@ -275,7 +308,7 @@ img {
 
   .content{
     width: 90%;
-    .Bio img {
+    .bio img {
       padding-top: 3%;
     }
   }

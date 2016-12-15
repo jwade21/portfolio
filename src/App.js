@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, IndexLink } from 'react-router';
+require('normalize-css');
 
 import './App.css';
 
@@ -8,7 +9,6 @@ class App extends Component {
     return (
       <div className='App'>
         <div className='header'>
-          <img src={require('./photos/seattle.jpg')} alt='Me in Seattle' id='headshot' />
           <div className='headerText'>
             <h1>
               Jordan Wade
@@ -16,17 +16,6 @@ class App extends Component {
             <h2>
               Web Developer
             </h2>
-          </div>
-          <div className='headerTextRight'>
-            <h3>
-              Loves to learn
-            </h3>
-            <h3>
-              Loves teamwork
-            </h3>
-            <h3>
-              Ready for work
-            </h3>
           </div>
         </div>
         <ul className='nav'>
