@@ -9,12 +9,29 @@ $darkerorange: darken($orange, 20%);
 $lightblack: rgba(0, 0, 0, .7);
 $opaqueBlack: rgba(0, 0, 0, .9);
 
-//font-size
-$small-font: 18px;
-
-//font-family
+// // font-family
 $raleway: 'Raleway', sans-serif;
 $crete: 'Crete Round', serif;
+
+// // font-sizes
+//phone-size
+$phone-small: 10px;
+$phone-medium: 13px;
+$phone-large: 15px;
+
+
+//small-screen 768px
+$sScreen-small: 18px;
+$sScreen-medium: 22px;
+$sScreen-large: 28px;
+
+
+//large-screen > 1200px
+$lScreen-small: 23px;
+$lScreen-medium: 26px;
+$lScreen-large: 32px;
+$lScreen-xl: 38px;
+
 
 
 // Boiler plate CSS
@@ -28,13 +45,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
     p {
-      font-size: 24px;
+      font-size: $phone-small;
     }
 }
 img {
   display: flex;
   align-self: flex-start;
-  width: 130px;
+  width: 50px;
   margin: 10px;
   display: inline-block;
 }
@@ -46,33 +63,33 @@ img {
     flex-direction: column;
   }
   h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
   h2 {
     color: $orange;
-    font-size: 27px;
+    font-size: $phone-large;
   }
 }
 
 .App {
-  font-family: $raleway
+  font-family: $raleway;
 }
 
 
 .nav {
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 5pv;
   background-color: $lightblack;
   display: flex;
   justify-content: center;
   font-family: $crete;
 
-   li {
+  li {
     display: inline;
     margin: 8px 15px;
   }
-   a {
-    font-size: 22px;
+  a {
+    font-size: $phone-small;
     color: $orange;
     text-decoration: none;
     display: inline;
@@ -93,87 +110,88 @@ img {
 //-----------//
 
 .content {
-  width: 80%;
-  margin: 40px auto;
-  padding-bottom: 50px;
+  width: 95%;
+  margin: 20px auto;
+  padding-bottom: 20px;
   background-color: $lightblack;
   border-radius: 10px;
+}
 
-  .homeTextContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .bio {
-      display: flex;
-      margin-top: 30px;
-      padding-bottom: 20px;
-      justify-content: space-around;
-      border-bottom: 3px solid $darkerorange;
-    }
-
-    .bio p {
-      width: 50%;
-      display: flex;
-      align-self: center;
-      line-height: 35px;
-    }
-    .bioPictures {
-      display: flex;
-      flex-direction: column;
-      width: 35%;
-      img {
-        width: 90%;
-        margin: 0px;
-      }
-    }
-
-    .skillsContainer {
-      display: flex;
-      justify-content: space-around;
-    }
-    .skills {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-bottom: 5px;
-      h3 {
-        font-size: 25px;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        line-height: 30px;
-      }
-      li {
-        list-style: none;
-        font-size: 24px;
-        padding: 5px;
-      }
-    }
-    p {
-      width: 44%;
-      line-height: 35px;
-    }
-    img {
-      width: 25%;
-    }
-    h2 {
-      font-size: 35px;
-    }
+.homeTextContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+      font-size: $phone-large;
   }
 }
 
+.bio {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  align-items: center;
+  border-bottom: 3px solid $darkerorange;
+
+  p {
+    width: 90%;
+    line-height: 20px;
+  }
+}
+
+.bioPictures {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  img {
+    width: 90%;
+    margin: 0px;
+  }
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills {
+  width: 33%;
+  margin-bottom: 5px;
+  h3 {
+    font-size: $phone-medium;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    line-height: 10px;
+  }
+  li {
+    list-style: none;
+    font-size: $phone-small;
+    padding: 5px;
+  }
+}
+
+
+
 .projectsPage {
   padding-top: 5px;
+  h1 {
+    font-size: $phone-large;
+  }
 }
+
 .project {
-	width: 90%;
-	height: 450px;
+	width: 85%;
+	height: 200px;
   background-position: center;
   background-size: cover;
 	display: block;
-	margin: 35px auto;
+	margin: 15px auto;
   border: 1px solid white;
 
   .hidden{
@@ -192,26 +210,32 @@ img {
     p {
       width: 98%;
     }
+    h3 {
+      font-size: $phone-large;
+    }
   }
 
   .codeLinks {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
     a {
-      padding: 10px;
+      padding: 5px;
       margin: 5px;
       text-decoration: none;
       color: $orange;
       background-color: $darkerblue;
       border-radius: 5px;
+      font-size: $phone-small;
     }
   }
 
   h3 {
-    font-size: 30px;
+    font-size: $phone-medium;
+    margin-top: 10px;
   }
   p {
-    font-size: 22px;
+    font-size: $phone-small;
   }
 
 }
@@ -220,27 +244,36 @@ img {
   display: flex;
   img {
   width: 88%;
-  padding: 20px 0px;
+  padding: 15px 0px;
   align-self: center;
   }
+
+  .resumeDownloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   a {
-    width: 10%;
+    width: 115px;
+    font-size: $phone-large;
     text-decoration: none;
     color: $orange;
     background-color: $darkerblue;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     margin: 5px;
   }
 }
 
 .contact {
-  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  h2 {
+    font-size: $phone-large;
+  }
   .socials {
     display: flex;
     height: inherit;
@@ -251,19 +284,21 @@ img {
     justify-content: space-around;
   }
   i {
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: $darkerorange;
     border-radius: 10px;
   }
   a {
-    font-size: 22px;
+    font-size: $phone-medium;
     color: $blue;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
   }
   p {
-    font-size: 22px;
+    font-size: $phone-medium;
+    margin: 10px;
   }
 
 }
@@ -286,30 +321,180 @@ img {
 
 #beerTraveler {
   background-image: url('./photos/beerTraveler2.jpg');
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  p {
-    font-size: 21px;
-  }
+  height: 250px;
 }
 
 // responsiveness
 //-------------//
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
+
   body {
-    font-size: 18px;
-    .header {
-      font-size: $small-font;
+    p {
+      font-size: $sScreen-small;
+    }
+  }
+
+  .header {
+    h1 {
+      font-size: $sScreen-large;
+    }
+    h2 {
+      font-size: $sScreen-medium;
+    }
+  }
+
+  .nav a {
+    font-size: $sScreen-small;
+  }
+
+
+  .content {
+    padding-top: 20px;
+  }
+
+  .homeTextContainer h2 {
+    font-size: $sScreen-large;
+  }
+
+  .bio p {
+    line-height: 25px;
+  }
+
+  .skills {
+    h3 {
+      font-size: $sScreen-medium;
+    }
+    li {
+      font-size: $sScreen-small;
+      line-height: 20px;
+    }
+  }
+
+  .projectsPage h1{
+    font-size: $sScreen-large;
+  }
+
+  .project {
+    height: 400px;
+    margin: 30px auto;
+    .projectContent {
+      h3 {
+        font-size: $sScreen-large;
+      }
+      p {
+        font-size: $sScreen-small;
       }
     }
+    .codeLinks a {
+      font-size: $sScreen-medium;
+    }
+  }
+  #beerTraveler {
+    height: 400px;
+  }
 
-  .content{
-    width: 90%;
-    .bio img {
-      padding-top: 3%;
+  .resume a {
+    font-size: $sScreen-small;
+    width: 150px;
+  }
+
+  .contact {
+    h2 {
+      font-size: $sScreen-large;
+    }
+    i {
+      font-size: 40px;
+    }
+    a,p {
+      font-size: $sScreen-medium;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  body {
+    p {
+      font-size: $lScreen-small;
+    }
+  }
+
+  .header {
+    h1 {
+      font-size: $lScreen-xl;
+    }
+    h2 {
+      font-size: $lScreen-large;
+    }
+  }
+
+  .nav a {
+    font-size: $lScreen-small;
+  }
+
+  .homeTextContainer h2 {
+    font-size: $lScreen-large;
+  }
+
+  .bio {
+    p {
+      line-height: 35px;
+    }
+    img {
+      width: 70%;
+    }
+  }
+
+
+  .skills {
+    h3 {
+      font-size: $lScreen-medium;
+    }
+    li {
+      font-size: $lScreen-small;
+      line-height: 30px;
+    }
+  }
+
+  .projectsPage h1{
+    font-size: $lScreen-large;
+  }
+
+  .project {
+    height: 500px;
+    .projectContent {
+      h3 {
+        font-size: $lScreen-medium;
+      }
+      p {
+        font-size: $lScreen-small;
+      }
+    }
+    .codeLinks a {
+      font-size: $lScreen-small;
+    }
+  }
+  #beerTraveler {
+    height: 550px;
+  }
+
+  .resume a {
+    width: 175px;
+    font-size: $lScreen-small;
+  }
+
+  .contact {
+    h2 {
+      font-size: $lScreen-large;
+    }
+    i {
+      font-size: 50px;
+      margin: 10px;
+    }
+    a,p {
+      font-size: $lScreen-medium;
     }
   }
 }

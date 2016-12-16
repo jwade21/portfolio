@@ -40,7 +40,7 @@ class Home extends Component {
                 <li>Express</li>
                 <li>Firebase</li>
                 <li>Heroku</li>
-                <li>Ruby on Rails</li>
+                <li>Rails</li>
               </ul>
             </div>
             <div className='skills'>
