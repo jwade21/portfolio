@@ -76,7 +76,7 @@ img {
   align-items: center;
   border-bottom: 3px solid #b9210f; }
   .bio p {
-    width: 90%;
+    width: 75%;
     line-height: 20px; }
 
 .bioPictures {
@@ -232,8 +232,17 @@ img {
     padding-top: 20px; }
   .homeTextContainer h2 {
     font-size: 28px; }
-  .bio p {
-    line-height: 25px; }
+  .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .bio .bioPictures {
+      display: flex;
+      flex-direction: column;
+      width: 30%; }
+    .bio p {
+      width: 45%;
+      line-height: 25px; }
   .skills h3 {
     font-size: 22px; }
   .skills li {

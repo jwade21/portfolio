@@ -135,7 +135,7 @@ img {
   border-bottom: 3px solid $darkerorange;
 
   p {
-    width: 90%;
+    width: 75%;
     line-height: 20px;
   }
 }
@@ -357,8 +357,19 @@ img {
     font-size: $sScreen-large;
   }
 
-  .bio p {
-    line-height: 25px;
+  .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .bioPictures {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+    }
+    p {
+      width: 45%;
+      line-height: 25px;
+    }
   }
 
   .skills {
