@@ -13,8 +13,8 @@ class Projects extends Component {
         purpose: 'Pulls videos from Youtube, Facebook, and Google Plus APIs. Users can search by one user and find videos from multiple sources.',
         tools: 'React, Node.js, MongoDB, and Express',
         description: 'This was my final solo project at General Assembly. I alone made this over the course of 5 days.',
-        pageLink: 'https://jwade21.github.io/manifest-dance/',
-        githubLink: 'https://github.com/jwade21/manifest-dance/',
+        pageLink: 'https://jwade21.github.io/manifest-social/',
+        githubLink: 'https://github.com/jwade21/manifest-social/',
         id: 'manifestSocial'
       },
         {

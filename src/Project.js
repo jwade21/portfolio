@@ -30,8 +30,8 @@ class Project extends Component {
           <p><span>Tools: </span>{this.props.project.tools}</p>
           <p><span>Description: </span>{this.props.project.description}</p>
           <div className='codeLinks'>
-            <a href={this.props.project.pageLink}>Project Page</a>
-            <a href={this.props.project.githubLink}>Project Code</a>
+            <a href={this.props.project.pageLink} target='_blank'>Project Page</a>
+            <a href={this.props.project.githubLink} target='_blank'>Project Code</a>
           </div>
         </div>
       </div>
