@@ -22,7 +22,7 @@ class Contact extends Component {
             <a href='https://github.com/jwade21' target='_blank'>jwade21</a>
             <a href='https://www.linkedin.com/in/jordan-wade' target='_blank'>Jordan Wade</a>
             <p>jordanwade.dev@gmail.com</p>
-            <p>(530)-708-2692</p>
+            <a href='tel:5307082692'>(530)-708-2692</a>
           </ul>
         </div>
       </div>

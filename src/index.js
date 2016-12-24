@@ -17,7 +17,7 @@ ReactDOM.render(
       <Route path='resume' component={Resume} />
       <Route path='contact' component={Contact} />
     </Route>
-    <Route path='/notfound' component={NotFound} />
+    <Route path='*' component={NotFound} />
   </Router>,
   document.getElementById('root')
 );

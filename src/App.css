@@ -140,9 +140,10 @@ img {
   .project .codeLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 10px; }
     .project .codeLinks a {
-      padding: 10px;
+      padding: 5px;
       margin: 5px;
       text-decoration: none;
       color: #ef513f;

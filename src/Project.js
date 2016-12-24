@@ -4,7 +4,7 @@ class Project extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      class: 'hidden'
+      class: ''
     }
     this._showContent = this._showContent.bind(this)
     this._hideContent = this._hideContent.bind(this)
@@ -21,7 +21,7 @@ class Project extends Component {
   }
   render() {
     return(
-      <div className='project' id={this.props.project.id} onMouseOver={this._showContent} onMouseLeave={this._hideContent}>
+      <div className='project' id={this.props.project.id} onMouseOver={this._showContent} onMouseLeave={this._hideContent} onPress={this._showContent}>
         <div className={this.state.class}>
           <h3>
             {this.props.project.title}

@@ -219,9 +219,10 @@ img {
   .codeLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     a {
-      padding: 10px;
+      padding: 5px;
       margin: 5px;
       text-decoration: none;
       color: $orange;
