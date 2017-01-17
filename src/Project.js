@@ -4,7 +4,7 @@ class Project extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      class: ''
+      class: 'hidden'
     }
     this._showContent = this._showContent.bind(this)
     this._hideContent = this._hideContent.bind(this)

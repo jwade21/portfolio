@@ -9,8 +9,8 @@ class Home extends Component {
               I am a web developer and one of my strongest skills is the ability to quickly spot patterns and mistakes.  I am very reliable when it comes to quickly and effectively relaying the information to the appropriate person. I am looking to incorporate my leadership and communication skills into the development community to help create stronger team functionality.
             </p>
             <div className='bioPictures'>
-              <img src={require('./photos/headshot.jpg')} alt='headshot'/>
-              <img src={require('./photos/headshot2.jpg')} alt='headshot'/>
+              <img src={require('./photos/sm-headshot.jpg')} alt='headshot'/>
+              <img src={require('./photos/sm-headshot2.jpg')} alt='headshot'/>
             </div>
           </div>
 
