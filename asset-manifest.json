@@ -1,16 +1,16 @@
 {
-  "main.css": "static/css/main.ecde5ecd.css",
-  "main.css.map": "static/css/main.ecde5ecd.css.map",
-  "main.js": "static/js/main.e0b04522.js",
-  "main.js.map": "static/js/main.e0b04522.js.map",
+  "main.css": "static/css/main.46a12d2a.css",
+  "main.css.map": "static/css/main.46a12d2a.css.map",
+  "main.js": "static/js/main.1e56030f.js",
+  "main.js.map": "static/js/main.1e56030f.js.map",
   "static/media/background.jpg": "static/media/background.474ebe6b.jpg",
   "static/media/beerTraveler2.jpg": "static/media/beerTraveler2.a1d14cad.jpg",
   "static/media/dash-projects.jpg": "static/media/dash-projects.48a20c04.jpg",
   "static/media/date-night.jpg": "static/media/date-night.da47fa62.jpg",
   "static/media/fakebook.jpg": "static/media/fakebook.23d0bdd8.jpg",
-  "static/media/headshot.jpg": "static/media/headshot.7fd2ed79.jpg",
-  "static/media/headshot2.jpg": "static/media/headshot2.db364fb3.jpg",
-  "static/media/manifest-social.jpg": "static/media/manifest-social.71af0dc9.jpg",
+  "static/media/manifest-social.jpg": "static/media/manifest-social.58849cdd.jpg",
   "static/media/resume.jpg": "static/media/resume.ab856262.jpg",
-  "static/media/resumeBW.jpg": "static/media/resumeBW.50066d45.jpg"
+  "static/media/resumeBW.jpg": "static/media/resumeBW.50066d45.jpg",
+  "static/media/sm-headshot.jpg": "static/media/sm-headshot.f3780449.jpg",
+  "static/media/sm-headshot2.jpg": "static/media/sm-headshot2.c6305338.jpg"
 }
