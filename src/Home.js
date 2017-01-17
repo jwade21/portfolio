@@ -52,6 +52,7 @@ class Home extends Component {
               </ul>
             </div>
           </div>
+          <h2>Currently Learning: WordPress</h2>
         </div>
     )
   }
